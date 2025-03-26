@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    restart: always
+    command: redis-server --requirepass P@ssw0rd
+    ports:
+      - 6379:6379
